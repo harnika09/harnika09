@@ -1,33 +1,69 @@
-#  Hi there! II'm Harnika Pendyala
+# Adult Income Classification
 
-Graduate Student in Data Science at The University of Memphis  
-Based in Memphis, TN | Open to full-time roles in Data Science & Analytics  
-Passionate about turning raw data into actionable insights  
+This project predicts whether a person's income exceeds \$50K/year based on census data from the UCI Adult dataset. The goal is to build and compare multiple classification models and evaluate them using various performance metrics—not just accuracy, but also precision, recall, F1-score, and AUC—to ensure fairness in the presence of class imbalance.
 
+## Objective
 
-## About Me
-
-I'm a data-driven thinker who loves solving real-world problems with code and statistics.  
-Currently diving deep into machine learning, predictive modeling, and data storytelling. I work with Python, R, and SQL, and I enjoy building clean, scalable ML pipelines.
-
-🔍 I care about:
-- Model fairness and evaluation beyond just accuracy (F1 Score, AUC, etc.)
-- Making data insights interpretable and impactful
-- Learning something new every single day
-
-## Tech & Tools
-
-- **Languages:** Python, R, SQL  
-- **Libraries/Frameworks:** pandas, scikit-learn, matplotlib, seaborn, tidyverse, caret  
-- **Data Viz:** Power BI, Excel  
-- **Tools:** Git, Jupyter, RStudio, VS Code
+To develop a robust machine learning pipeline that classifies individuals’ income levels using demographic, educational, and occupational features. The project also emphasizes the importance of going beyond accuracy to evaluate model performance.
 
 ---
 
-## Projects
+## Files
 
-- [🔎 Adult Income Classification](https://github.com/yourusername/adult-income-classification): ML models to predict if income >$50K using census data (Random Forest, SVM, etc.)
-- [🏏 Cricket Performance Prediction](https://github.com/yourusername/cricket-run-prediction): Regression models to predict test match runs from player stats (Interaction, Ridge, Lasso)
+- `Harnika_Pendyala_Adult_Income_Classification_Report.docx` – Detailed report including EDA, model comparison, and conclusions.
+- `HarnikaPendyala_Income_Classification_Code.ipynb` – Full code for data preprocessing, PCA, and model training/evaluation.
 
+---
 
-*Always curious. Always improving.*
+## Techniques Used
+
+- Data Cleaning & Preprocessing
+- Principal Component Analysis (PCA)
+- Train-test split
+- Standardization
+- Model Training with:
+  - Logistic Regression
+  - Naïve Bayes
+  - Linear Discriminant Analysis (LDA)
+  - Quadratic Discriminant Analysis (QDA)
+  - K-Nearest Neighbors (KNN)
+
+---
+
+## Evaluation Metrics
+
+Each model was evaluated using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+- AUC (Area Under ROC Curve)  
+- Confusion Matrix
+
+This ensured a comprehensive comparison and avoided misleading results from relying on accuracy alone, especially in the presence of imbalanced classes.
+
+---
+
+## Key Insights
+
+- PCA helped reduce dimensionality without losing significant variance.
+- LDA and Logistic Regression performed well in terms of both AUC and F1-score.
+- Models were compared with a focus on practical deployment, not just raw accuracy.
+
+---
+
+## Tools Used
+
+- Python
+- scikit-learn
+- pandas, numpy
+- matplotlib, seaborn
+- Jupyter Notebook
+
+---
+
+## Author
+
+**Harnika Pendyala**  
+Graduate Student – Data Science | University of Memphis  
